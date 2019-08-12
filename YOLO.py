@@ -95,7 +95,7 @@ for i in indices:
     w = box[2]
     h = box[3]
     draw_prediction(image, class_ids[i], confidences[i], round(x), round(y), round(x + w), round(y + h))
-
+cv2.imwrite('kq.png',image,[int(cv2.IMWRITE_JPEG_QUALITY),  90])
 cv2.imshow("object detection", image)
 
 
